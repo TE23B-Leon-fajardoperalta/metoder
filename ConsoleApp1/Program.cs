@@ -80,15 +80,34 @@
 // GetNumberInput();
 // //__________________________________________________________
 
-static string getchoice(sting1,sting2,sting3)
+// FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL FEL 
+//  static string getchoice(string sting1 ,string sting2,string sting3)
+// {
+
+//     return sting1 + sting2 + sting3;
+// }
+
+// getchoice("dog","dog2","dog3");
+List<string> valja = ["","dog1","dog2","dog3","dog4"];
+
+for (int i = 1; i < valja.Count ; i++)
 {
-    string sting1 = "dog";
-    string sting2 = "dog2";
-    string sting3 = "dog3";
-    
-    return sring1 + sting2 + sting3;
+    Console.WriteLine(valja[i]);
 }
+Console.WriteLine("välj en");
 
-getchoice();
+static int getchoice()
+{
+int result = 0;
 
+string read = Console.ReadLine();
+
+int.TryParse(read, out result);
+
+return result;
+}
+int wow = getchoice();
+
+
+Console.WriteLine(valja[wow]);
 Console.ReadLine();
